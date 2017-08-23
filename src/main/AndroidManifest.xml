@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="benyamephrem.frameshift" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Activities.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.SinglePlayer"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="benyamephrem.frameshift.Activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Activities.SinglePlayerRedirect"
+            android:label="@string/title_activity_redirect"
+            android:parentActivityName=".Activities.SinglePlayer"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="benyamephrem.frameshift.Activities.SinglePlayer" />
+        </activity>
+        <activity
+            android:name=".Activities.DoublePlayer"
+            android:label="@string/title_activity_double_player"
+            android:parentActivityName=".Activities.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="benyamephrem.frameshift.Activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Activities.DoublePlayerRedirect"
+            android:label="@string/title_activity_double_player_redirect"
+            android:parentActivityName=".Activities.DoublePlayer" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="benyamephrem.frameshift.Activities.DoublePlayer" />
+        </activity>
+        <activity
+            android:name=".Activities.TiltMode"
+            android:label="@string/title_activity_tilt_mode"
+            android:parentActivityName=".Activities.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="benyamephrem.frameshift.Activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Activities.TiltModeRedirect"
+            android:label="@string/title_activity_tilt_mode_redirect"
+            android:parentActivityName=".Activities.TiltMode" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="benyamephrem.frameshift.Activities.TiltMode" />
+        </activity>
+    </application>
+
+</manifest>

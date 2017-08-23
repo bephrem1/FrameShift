@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Frame Shift</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_redirect">Redirect</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_double_player">DoublePlayer</string>
+    <string name="title_activity_double_player_redirect">DoublePlayerRedirect</string>
+    <string name="title_activity_tilt_mode">TiltMode</string>
+    <string name="title_activity_tilt_mode_redirect">TiltModeRedirect</string>
+</resources>
